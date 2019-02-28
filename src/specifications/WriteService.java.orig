@@ -1,0 +1,22 @@
+/* ******************************************************
+ * Simulator alpha - Composants logiciels 2015.
+ * Copyright (C) 2015 <Binh-Minh.Bui-Xuan@ens-lyon.org>.
+ * GPL version>=3 <http://www.gnu.org/licenses/>.
+ * $Id: specifications/WriteService.java 2015-03-09 buixuan.
+ * ******************************************************/
+package specifications;
+
+import tools.Direction;
+import tools.Position;
+
+public interface WriteService {
+  public void setRobotPosition(Position p);
+  public void setStepNumber(int n);
+void addCheckedPositions(double x, double y);
+void addKnownPositions(double x, double y, int state);
+<<<<<<< HEAD
+void setRobotDirection(Direction direction);
+=======
+void addObstaclePositions(double x, double y);
+>>>>>>> 1f4f8bd46efcd2ea547e05a18164fafbcf031a89
+}
